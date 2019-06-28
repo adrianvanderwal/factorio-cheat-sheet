@@ -109,6 +109,11 @@ pre {
 img {
     box-shadow: 2px 2px 10px $c-pallette-transp-medium;
     width: 400px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    &.ng-lazyloaded {
+        opacity: 1;
+    }
 }
 
 .limit-img-height {
